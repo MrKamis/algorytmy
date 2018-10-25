@@ -90,6 +90,7 @@ body {
 	position: absolute;
 	left: 10%;
 	padding: 10px;
+	margin: 10px;
 }
 .divRight {
 	transition-duration: 2s;
@@ -111,4 +112,18 @@ body {
 }
 .divCenter, .divLeft, .divRight {
 	overflow-y: scroll;
+}
+.code {
+	width: 100%;
+	line-height: 20px;
+	background-color: lightslategray;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.code pre {
+	margin-left: -90px;
+}
+.colored {
+	color: yellowgreen;
 }
