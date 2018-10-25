@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	transition-duration: 1s;
+}
+body {
+	background-color: #C8CACF;
+	overflow: hidden;
+}
+.top, .bottom {
+	background-color: #A4A7AF;
+}
+.top {
+	width: 100%;
+	height: 8vh;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 150%;
+}
+.top h2 {
+	color: #fff;
+}
+.bottom {
+	width: 100%;
+	height: 8vh;
+	position: absolute;
+	top: 92vh;
+}
+.bottom div {
+	text-align: right;
+	color: #fff;
+	font-size: 120%;
+	padding-top: 25px;
+	padding-right: 20px;
+}
+.left, .right {
+	width: 10%;
+	opacity: 0.5;
+	background-color: #323A4A;
+	height: 84vh;
+	position: absolute;
+	top: 8vh;
+	cursor: pointer;
+	z-index: 5;
+}
+.left:hover, .right:hover {
+	transition-duration: 1s;
+	opacity: 1;
+}
+.right {
+	right: 0;
+}
+.left img {
+	width: 80%;
+	margin: 10%;
+	margin-top: 28vh;
+	transform: rotate(180deg);
+}
+.right img {
+	width: 80%;
+	margin: 10%;
+	margin-top: 28vh;
+}
+.leftHider {
+	z-index: 4;
+	width: 10%;
+	background-color: #C8CACF;
+	height: 84vh;
+	position: absolute;
+	top: 8vh;
+	cursor: pointer;
+}
+.rightHider {
+	z-index: 4;
+	width: 10%;
+	background-color: #C8CACF;
+	height: 84vh;
+	position: absolute;
+	top: 8vh;
+	cursor: pointer;
+	left: 90%;
+}
+.divCenter {
+	transition-duration: 2s;
+	z-index: 3;
+	width: 80%;
+	height: 84vh;
+	position: absolute;
+	left: 10%;
+	padding: 10px;
+}
+.divRight {
+	transition-duration: 2s;
+	z-index: 3;
+	width: 80%;
+	height: 84vh;
+	position: absolute;
+	left: 100%;
+	padding: 10px;
+}
+.divLeft {
+	transition-duration: 2s;
+	z-index: 3;
+	width: 80%;
+	height: 84vh;
+	position: absolute;
+	left: -100%;
+	padding: 10px;
+}
+.divCenter, .divLeft, .divRight {
+	overflow-y: scroll;
+}
