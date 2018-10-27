@@ -30,8 +30,10 @@
                                 }
                             }
                             if(tmp){
+                                cout << "Liczba jest lczba pierwsza!";
                                 return true;
                             }else{
+                                cout << "Liczba nie jest liczba pierwsza!";
                                 return false;
                             }
                         }
@@ -65,6 +67,7 @@
         ];
         let i = 1;
         let block = false;
+        let title = document.getElementById('title');
         let div1 = document.getElementById('div1');
         let div2 = document.getElementById('div2');
         let div3 = document.getElementById('div3');
@@ -73,6 +76,7 @@
             document.title = artykuly[i].title;
             div2.innerHTML = artykuly[i].content;
             color();
+            title.innerHTML = '> ' + artykuly[i].title;
         }
         function color(){
             for(let x = 0; x < document.getElementsByClassName('code').length; x++){
@@ -94,6 +98,7 @@
                 kolejnosc[0].innerHTML = artykuly[--i].content;
                 document.title = artykuly[i].title;
             }
+            title.innerHTML = '> ' + artykuly[i].title;
             block = true;
             kolejnosc[1].style.left = '100%';
             kolejnosc[0].style.left = '10%';
@@ -121,6 +126,7 @@
                 kolejnosc[2].innerHTML = artykuly[++i].content;
                 document.title = artykuly[i].title;
             }
+            title.innerHTML = '> ' + artykuly[i].title;
             block = true;
             kolejnosc[1].style.left = '-100%';
             kolejnosc[2].style.left = '10%';
